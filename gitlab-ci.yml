@@ -1,0 +1,12 @@
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - chmod +x run-test.sh
+    - ./run-test.sh
+  artifacts:
+    when: always
+    reports:
+      junit: test-results/*.xml

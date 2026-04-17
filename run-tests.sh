@@ -47,8 +47,8 @@ elif [ -f "package.json" ]; then
 # UNKNOWN
 # -------------------------
 else
-  echo "❌ Unknown project type"
+  echo "Unknown project type"
   exit 1
 fi
 
-echo "🎉 Done. Results in $RESULT_DIR"
+echo "Done. Results in $RESULT_DIR"
